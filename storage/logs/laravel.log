@@ -1,0 +1,13 @@
+[2017-06-02 10:55:14] local.ERROR: exception 'Symfony\Component\Console\Exception\RuntimeException' with message 'The "--port:8888" option does not exist.' in C:\wamp64\www\nourblog\vendor\symfony\console\Input\ArgvInput.php:219
+Stack trace:
+#0 C:\wamp64\www\nourblog\vendor\symfony\console\Input\ArgvInput.php(155): Symfony\Component\Console\Input\ArgvInput->addLongOption('port:8888', NULL)
+#1 C:\wamp64\www\nourblog\vendor\symfony\console\Input\ArgvInput.php(84): Symfony\Component\Console\Input\ArgvInput->parseLongOption('--port:8888')
+#2 C:\wamp64\www\nourblog\vendor\symfony\console\Input\Input.php(63): Symfony\Component\Console\Input\ArgvInput->parse()
+#3 C:\wamp64\www\nourblog\vendor\symfony\console\Command\Command.php(222): Symfony\Component\Console\Input\Input->bind(Object(Symfony\Component\Console\Input\InputDefinition))
+#4 C:\wamp64\www\nourblog\vendor\laravel\framework\src\Illuminate\Console\Command.php(168): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Illuminate\Console\OutputStyle))
+#5 C:\wamp64\www\nourblog\vendor\symfony\console\Application.php(835): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#6 C:\wamp64\www\nourblog\vendor\symfony\console\Application.php(200): Symfony\Component\Console\Application->doRunCommand(Object(Illuminate\Foundation\Console\ServeCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#7 C:\wamp64\www\nourblog\vendor\symfony\console\Application.php(124): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 C:\wamp64\www\nourblog\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(122): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#9 C:\wamp64\www\nourblog\artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#10 {main}  
